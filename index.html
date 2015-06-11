@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="en" data-ng-app="ieys">
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>India Emerge Youth Summit</title>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<div ng-controller="ctrl">
 
+    <md-toolbar>
+        <div class="md-toolbar-tools" layout="row">
+            <md-button class="md-icon-button" aria-label="Settings">
+                <md-icon md-svg-icon="bower_components/material-design-icons/action/svg/production/ic_search_24px.svg"></md-icon>
+            </md-button>
+            <input type="text" flex />
+
+
+        </div>
+    </md-toolbar>
+
+
+</div>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script>
+    angular.module('ieys', ['ngMaterial'])
+            .controller('ctrl', function($scope) {
+            })
+            .config(function($mdThemingProvider) {
+                $mdThemingProvider.theme('default')
+                        .primaryPalette('red')
+                        .accentPalette('red')});
+
+
+</script>
 </body>
 </html>
