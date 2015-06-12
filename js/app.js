@@ -8,7 +8,7 @@ app.controller(controllers);
 app.config(function($mdThemingProvider,$routeProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('grey',{
-            'default':'700'
+            'default':'800'
         })
         .accentPalette('red',{
             'default': 'A700'
